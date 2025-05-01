@@ -32,7 +32,9 @@ with open('ip.txt', 'w') as file:
         elif url == 'https://ip.164746.xyz':
             elements = soup.find_all('tr')
         elif url == 'https://stock.hostmonit.com/CloudFlareYes':
-            elements = soup.find_all('div class="cell"')
+            elements = soup.find_all('tr')
+        elif url == 'https://cf.090227.xyz':
+            elements = soup.find_all('tr')
         else:
             elements = soup.find_all('li')
         
